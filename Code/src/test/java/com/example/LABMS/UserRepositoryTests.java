@@ -1,4 +1,4 @@
-package com;
+package com.example.LABMS; // Ajuste o pacote conforme necessário
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -7,14 +7,11 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import com.example.LABMS.model.User;
 import com.example.LABMS.repository.UserRepository;
 
-
 @SpringBootTest
-@RunWith(SpringRunner.class)
 public class UserRepositoryTests {
 
     @Autowired

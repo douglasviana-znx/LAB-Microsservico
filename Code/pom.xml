@@ -74,15 +74,32 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- Spring Boot Starter Test -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- JUnit Jupiter API -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.7.1</version> <!-- Ou a versão mais recente -->
+			<scope>test</scope>
+		</dependency>
+
+		<!-- JUnit Jupiter Engine -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.7.1</version> <!-- Ou a versão mais recente -->
+			<scope>test</scope>
+    </dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -111,7 +128,33 @@
     			<artifactId>mysql-connector-java</artifactId>
     			<version>8.0.32</version> <!-- use a versão mais recente -->
 			</dependency>
-			
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>1.6.14</version> <!-- Use a versão mais recente disponível -->
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>2.9.2</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>2.9.2</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+            	<groupId>org.springframework.cloud</groupId>
+            	<artifactId>spring-cloud-dependencies</artifactId>
+            	<version>Hoxton.SR12</version>
+            	<type>pom</type>
+            	<scope>import</scope>
+       		</dependency>
 		</dependencies>
 	</dependencyManagement>
 
